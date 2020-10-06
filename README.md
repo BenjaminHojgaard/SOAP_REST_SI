@@ -14,7 +14,7 @@
 - 1 Client program consuming both services
 
 ## Business  and technical features
-- Program consists of a client that can call a REST service to either look up books, or add new ones.
+- Program consists of a client that can call a REST service to perform CRUD operations.
 - Before a call to the REST is carried out, a call to a SOAP service is made to verify that the supplied ISBN number is a valid ISBN13 number.
 
 ## Installation instructions 
@@ -29,12 +29,12 @@
 GET, POST, PUT and DELETE are supported.
 POST and PUT require a TITLE and AUTHOR parameter.
 
-- GETALL
+    - GETALL
 
-- GET,{ISBN}
+    - GET,{ISBN}
 
-- POST,{ISBN},{TITLE},{AUTHOR}
+    - POST,{ISBN},{TITLE},{AUTHOR}
 
-- PUT,{ISBN},{TITLE},{AUTHOR}
+    - PUT,{ISBN},{TITLE},{AUTHOR}
 
-- DELETE,{ISBN}
+    - DELETE,{ISBN}
