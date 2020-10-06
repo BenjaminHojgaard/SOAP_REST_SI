@@ -30,7 +30,12 @@ public class Client {
         Map<String, String> params = new HashMap<String, String>();
 
 
-        System.out.println("Write an HTTP method. Separate with a comma. Then write an ISBN. GET/POST/PUT/DELETE + {isbn} supported.\nWrite GETALL to make a GET against /isbn");
+        System.out.println("METHODS SYNTAX:");
+        System.out.println("GETALL - Gets all books");
+        System.out.println("GET,{ISBN} - Get a specific book by ISBN");
+        System.out.println("POST,{ISBN},{TITLE},{AUTHOR} - Creates new book with supplied params");
+        System.out.println("PUT,{ISBN},{TITLE},{AUTHOR} - Updates existing book by ISBN with supplied params");
+        System.out.println("DELETE,{ISBN} - Deletes a specific book by ISBN");
         while (scanner.hasNext()) {
             String[] vars;
             String method = "GETALL";
